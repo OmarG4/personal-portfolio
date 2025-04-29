@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export const About = () => {
 
     const frontEndSkills = ["React", "TailWindCSS", "HTML", "CSS"];
@@ -9,7 +11,7 @@ export const About = () => {
             <div className='max-w-3xl mx-auto px-4'>
                 <h2 className='text-3xl font-bold mb-8 text-[#F1EFEC] text-center'>About Me</h2>
 
-                <div className='p-8 rounded-xl border border-[#213555] hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_#3E5879] transition-all'>
+                {/* <div className='p-8 rounded-xl border border-[#213555] hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_#3E5879] transition-all'>
                     <p className='text-[#F1EFEC] mb-6'>Passionate develop with expertise in building scalable web applications and creating innovative solutions</p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -39,6 +41,96 @@ export const About = () => {
                             </div>
                         </div>
                     </div>
+                </div> */}
+
+                <div className='flex justify-center items-center gap-8' >
+
+                    <div className='flex flex-col gap-6'>
+                        <motion.img 
+                            initial={{ scale: 0 }} 
+                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
+                            whileTap={{ scale: 0.95 }}
+                            src='./c++.png' 
+                            width='50' 
+                            height='50'
+                            alt='C++'
+                            title='C++'
+                            />
+                        <motion.img 
+                            initial={{ scale: 0 }} 
+                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
+                            whileTap={{ scale: 0.95 }}
+                            src='./css.png' 
+                            width='50' 
+                            height='50'
+                            alt='CSS'
+                            title='CSS'
+                            />
+                    </div>
+
+                    <div className='flex flex-col gap-6'>
+                        <motion.img 
+                            initial={{ scale: 0 }} 
+                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
+                            whileTap={{ scale: 0.95 }} 
+                            src='./html.png' 
+                            width='50' 
+                            height='50'
+                            alt='HTML'
+                            title='HTML'
+                            />
+                        <motion.img 
+                            initial={{ scale: 0 }} 
+                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
+                            whileTap={{ scale: 0.95 }}
+                            src='./java.png' 
+                            width='50' 
+                            height='50'
+                            alt='Java'
+                            title='Java'
+                            />
+                        <motion.img 
+                            initial={{ scale: 0 }} 
+                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
+                            whileTap={{ scale: 0.95 }}
+                            src='./javascript.png' 
+                            width='50' 
+                            height='50'
+                            alt='Javascript'
+                            title='Javascript'
+                            />
+                    </div>
+
+                    <div className='flex flex-col gap-6'>
+                        <motion.img 
+                            initial={{ scale: 0 }} 
+                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
+                            whileTap={{ scale: 0.95 }} 
+                            src='./python.png' 
+                            width='50' 
+                            height='50'
+                            alt='Python'
+                            title='Python'
+                            />
+                        <motion.img 
+                            initial={{ scale: 0 }} 
+                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
+                            whileTap={{ scale: 0.95 }} 
+                            src='./react.png' 
+                            width='50' 
+                            height='50'
+                            alt='React'
+                            title='React'
+                            />
+                    </div>
+
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8'>
