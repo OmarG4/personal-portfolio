@@ -54,7 +54,8 @@ export const About = () => {
                     {/* <div className='flex flex-col gap-6'> */}
                         <motion.img 
                             initial={{ scale: 0 }} 
-                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            viewport={{ once: true, amount: 1.0}}
+                            animate={{ scale: 1, transition: { duration: 2.0, ease: "easeInOut" } }} 
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
                             whileTap={{ scale: 0.95 }}
                             src='./c++.png' 
@@ -65,7 +66,7 @@ export const About = () => {
                             />
                         <motion.img 
                             initial={{ scale: 0 }} 
-                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            animate={{ scale: 1, transition: { duration: 2.0, ease: "easeInOut" } }} 
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
                             whileTap={{ scale: 0.95 }}
                             src='./css.png' 
@@ -79,7 +80,7 @@ export const About = () => {
                     {/* <div className='flex flex-col gap-6'> */}
                         <motion.img 
                             initial={{ scale: 0 }} 
-                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            animate={{ scale: 1, transition: { duration: 2.0, ease: "easeInOut" } }} 
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
                             whileTap={{ scale: 0.95 }} 
                             src='./html.png' 
@@ -90,7 +91,7 @@ export const About = () => {
                             />
                         <motion.img 
                             initial={{ scale: 0 }} 
-                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            animate={{ scale: 1, transition: { duration: 2.0, ease: "easeInOut" } }} 
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
                             whileTap={{ scale: 0.95 }}
                             src='./java.png' 
@@ -101,7 +102,7 @@ export const About = () => {
                             />
                         <motion.img 
                             initial={{ scale: 0 }} 
-                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            animate={{ scale: 1, transition: { duration: 2.0, ease: "easeInOut" } }} 
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
                             whileTap={{ scale: 0.95 }}
                             src='./javascript.png' 
@@ -115,7 +116,7 @@ export const About = () => {
                     {/* <div className='flex flex-col gap-6'> */}
                         <motion.img 
                             initial={{ scale: 0 }} 
-                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            animate={{ scale: 1, transition: { duration: 2.0, ease: "easeInOut" } }} 
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
                             whileTap={{ scale: 0.95 }} 
                             src='./python.png' 
@@ -126,7 +127,7 @@ export const About = () => {
                             />
                         <motion.img 
                             initial={{ scale: 0 }} 
-                            animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
+                            animate={{ scale: 1, transition: { duration: 2.0, ease: "easeInOut" } }} 
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 300, damping: 10 } }} 
                             whileTap={{ scale: 0.95 }} 
                             src='./react.png' 
