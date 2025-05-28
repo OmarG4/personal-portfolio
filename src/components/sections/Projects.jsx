@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 
 export const Projects = () => {
 
     return (
-        <section id='projects' className='min-h-screen flex items-center justify-center py-20'>
-
+    <motion.section
+      className="min-h-screen flex flex-col items-center justify-center"
+      initial={{ opacity: 0, y: 30 }}                // start hidden + slightly down
+      whileInView={{ opacity: 1, y: 0 }}             // animate to visible + up
+      viewport={{ once: true, amount: 0.2 }}         // trigger when 20% visible, only once
+      transition={{ duration: 0.6, ease: 'easeOut' }} // tweak timing & easing
+    >
             <div className='max-w-5xl mx-auto ps-4'>
                 <h2 className='text-3xl font-bold mb-8 text-center'>Projects</h2>
 
@@ -47,6 +53,6 @@ export const Projects = () => {
 
                 </div>
             </div>
-        </section>
+    </motion.section>
     );
 }

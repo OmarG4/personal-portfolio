@@ -1,5 +1,7 @@
 import emailjs from 'emailjs-com';
 import { useState } from "react";
+import { motion } from "framer-motion";
+
 
 export const Contact = () => {
 
@@ -27,7 +29,13 @@ export const Contact = () => {
     
     
     return (
-        <section id="contact" className='min-h-screen flex items-center justify-center py-20'>
+    <motion.section
+        className='min-h-screen flex items-center justify-center py-20'
+        initial={{ opacity: 0, y: 30 }}                // start hidden + slightly down
+        whileInView={{ opacity: 1, y: 0 }}             // animate to visible + up
+        viewport={{ once: true, amount: 0.2 }}         // trigger when 20% visible, only once
+        transition={{ duration: 0.6, ease: 'easeOut' }} // tweak timing & easing
+      >
             <div className='px-4 w-150'>
                 <h2 className='text-3xl font-bold mb-8 text-center'>Get In Touch</h2>
                 <form className='space-y-6' onSubmit={handleSubmit}>
@@ -84,6 +92,6 @@ export const Contact = () => {
                     </button>
                 </form>
             </div>
-        </section>
+    </motion.section>
     )
 }

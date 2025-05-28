@@ -6,7 +6,13 @@ export const About = () => {
     const backEndSkills = ["NodeJS", "Python", "C++", "Java"];
 
     return (
-        <section  id='about' className='min-h-screen flex items-center justify-center py-20'>
+    <motion.section
+        className='min-h-screen flex items-center justify-center py-20'
+        initial={{ opacity: 0, y: 30 }}                // start hidden + slightly down
+        whileInView={{ opacity: 1, y: 0 }}             // animate to visible + up
+        viewport={{ once: true, amount: 0.2 }}         // trigger when 20% visible, only once
+        transition={{ duration: 0.6, ease: 'easeOut' }} // tweak timing & easing
+      >
 
             <div className='max-w-3xl mx-auto px-4'>
                 <h2 className='text-3xl font-bold mb-8 text-[#F1EFEC] text-center'>About Me</h2>
@@ -45,7 +51,7 @@ export const About = () => {
 
                 <div className='flex justify-center items-center gap-8' >
 
-                    <div className='flex flex-col gap-6'>
+                    {/* <div className='flex flex-col gap-6'> */}
                         <motion.img 
                             initial={{ scale: 0 }} 
                             animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
@@ -68,9 +74,9 @@ export const About = () => {
                             alt='CSS'
                             title='CSS'
                             />
-                    </div>
+                    {/* </div> */}
 
-                    <div className='flex flex-col gap-6'>
+                    {/* <div className='flex flex-col gap-6'> */}
                         <motion.img 
                             initial={{ scale: 0 }} 
                             animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
@@ -104,9 +110,9 @@ export const About = () => {
                             alt='Javascript'
                             title='Javascript'
                             />
-                    </div>
+                    {/* </div> */}
 
-                    <div className='flex flex-col gap-6'>
+                    {/* <div className='flex flex-col gap-6'> */}
                         <motion.img 
                             initial={{ scale: 0 }} 
                             animate={{ scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }} 
@@ -129,7 +135,7 @@ export const About = () => {
                             alt='React'
                             title='React'
                             />
-                    </div>
+                    {/* </div> */}
 
                 </div>
 
@@ -163,6 +169,6 @@ export const About = () => {
                     </div>
                 </div>
             </div>
-        </section>
+    </motion.section>
     );
 }
