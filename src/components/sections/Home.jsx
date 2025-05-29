@@ -4,6 +4,7 @@ export const Home = () => {
 
     return (
     <motion.section
+        id="home"
         className='min-h-screen flex items-center justify-center relative'
         initial={{ opacity: 0, y: 30 }}                // start hidden + slightly down
         whileInView={{ opacity: 1, y: 0 }}             // animate to visible + up

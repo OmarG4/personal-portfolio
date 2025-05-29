@@ -30,6 +30,7 @@ export const Contact = () => {
     
     return (
     <motion.section
+        id="contact"
         className='min-h-screen flex items-center justify-center py-20'
         initial={{ opacity: 0, y: 30 }}                // start hidden + slightly down
         whileInView={{ opacity: 1, y: 0 }}             // animate to visible + up
@@ -47,7 +48,7 @@ export const Contact = () => {
                             name='name' 
                             required
                             value={formData.name}
-                            className='w-full bg-[#1B262C] border border-[#0F4C75] rounded-lg px-4 py-3 text-[#213555] placeholder-[#3E5879]/60 transition-colors duration-300 focus:outline-none focus:border-[#3E5879] focus:bg-[#D4C9BE] focus:ring-2 focus:ring-[#3E5879]/20'
+                            className='w-full bg-[#1B262C] border border-[#0F4C75] rounded-lg px-4 py-3 text-[#213555] placeholder-[#3E5879]/60 transition-colors duration-300 focus:outline-none focus:border-[#3E5879] focus:bg-blue-100 focus:ring-2 focus:ring-[#3E5879]/20'
                             placeholder='Name...'
                             onChange={(e) =>
                                 setFormData({...formData, name: e.target.value})
@@ -62,7 +63,7 @@ export const Contact = () => {
                             name='email' 
                             required
                             value={formData.email}
-                            className='w-full bg-[#1B262C] border border-[#0F4C75] rounded-lg px-4 py-3 text-[#213555] placeholder-[#3E5879]/60 transition-colors duration-300 focus:outline-none focus:border-[#3E5879] focus:bg-[#D4C9BE] focus:ring-2 focus:ring-[#3E5879]/20'
+                            className='w-full bg-[#1B262C] border border-[#0F4C75] rounded-lg px-4 py-3 text-[#213555] placeholder-[#3E5879]/60 transition-colors duration-300 focus:outline-none focus:border-[#3E5879] focus:bg-blue-100 focus:ring-2 focus:ring-[#3E5879]/20'
                             placeholder='example@gmail.com'
                             onChange={(e) =>
                                 setFormData({...formData, email: e.target.value})
@@ -77,7 +78,7 @@ export const Contact = () => {
                             required
                             rows={5}
                             value={formData.message}
-                            className='w-full bg-[#1B262C] border border-[#0F4C75] rounded-lg px-4 py-3 text-[#213555] placeholder-[#3E5879]/60 transition-colors duration-300 focus:outline-none focus:border-[#3E5879] focus:bg-[#D4C9BE] focus:ring-2 focus:ring-[#3E5879]/20'
+                            className='w-full bg-[#1B262C] border border-[#0F4C75] rounded-lg px-4 py-3 text-[#213555] placeholder-[#3E5879]/60 transition-colors duration-300 focus:outline-none focus:border-[#3E5879] focus:bg-blue-100 focus:ring-2 focus:ring-[#3E5879]/20'
                             placeholder='Your Message...'
                             onChange={(e) =>
                                 setFormData({...formData, message: e.target.value})
