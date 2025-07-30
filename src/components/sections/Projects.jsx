@@ -30,7 +30,7 @@ export const Projects = () => {
                         </div>
 
                         <div className='flex justify-between items-center'>
-                            <a href='' className='hover:text-blue-300 transition-colors my-4'> View Project &rarr; </a>
+                            <a href='https://ezpc2.netlify.app/' target="_blank" className='hover:text-blue-300 transition-colors my-4'> View Project &rarr; </a>
                         </div>
                     </div>
 
@@ -45,10 +45,6 @@ export const Projects = () => {
                                   {tech}
                               </span>
                             ))}
-                        </div>
-
-                        <div className='flex justify-between items-center'>
-                            <a href='' className='hover:text-blue-300 transition-colors my-4'> View Project &rarr; </a>
                         </div>
                     </div>
 
